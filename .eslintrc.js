@@ -14,7 +14,7 @@ module.exports = {
          * @category Improving Readability
          * @fixable
          */
-        'quotes': ['error', 'single'],
+        quotes: ['error', 'single'],
         /**
          * 模版中开始标签的反尖括号前禁止有空格，自闭和标签前必须有空格
          * @category Improving Readability
@@ -73,11 +73,12 @@ module.exports = {
          * @fixable
          */
         'vue/html-closing-bracket-newline': [
-'error', {
-            'singleline': 'never',
-            'multiline': 'never'
-        }
-],
+            'error',
+            {
+                singleline: 'never',
+                multiline: 'never'
+            }
+        ],
 
         /**
          * template 模版中使用 4 个空格缩进
@@ -88,19 +89,19 @@ module.exports = {
         /**
          * 禁止在 else 前有 return
          */
-        'no-else-return': 'warn', 
+        'no-else-return': 'warn',
         /**
          * 在数组开括号后和闭括号前强制换行
          */
-        'array-bracket-newline': ['warn', {'multiline': true}],
+        'array-bracket-newline': ['warn', {multiline: true}],
         /**
          * 禁止未使用过的变量
          */
         'no-unused-vars': [
             'warn',
             {
-                'args': 'none',
-                'ignoreRestSiblings': true
+                args: 'none',
+                ignoreRestSiblings: true
             }
         ],
         /**
@@ -110,7 +111,7 @@ module.exports = {
             'warn',
             '1tbs',
             {
-                'allowSingleLine': true
+                allowSingleLine: true
             }
         ],
         /**
@@ -119,27 +120,27 @@ module.exports = {
         'no-use-before-define': [
             'warn',
             {
-                'functions': false,
-                'classes': false,
-                'variables': false
+                functions: false,
+                classes: false,
+                variables: false
             }
         ],
         /**
-         * 
+         *
          */
         'vue/no-parsing-error': [
             2,
             {
-              'unexpected-solidus-in-tag': false,
-            },
-          ],
-          'prettier/prettier': 'off',
-          /**
-           * 禁止空块语句 但允许catch
-           */
-          'no-empty': ['error', { 'allowEmptyCatch': true }],
+                'unexpected-solidus-in-tag': false
+            }
+        ],
+        'prettier/prettier': 'off',
+        /**
+         * 禁止空块语句 但允许catch
+         */
+        'no-empty': ['error', {allowEmptyCatch: true}]
     },
     parserOptions: {
         parser: 'babel-eslint'
-    },
+    }
 };
