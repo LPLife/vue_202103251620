@@ -79,7 +79,13 @@ module.exports = {
                 multiline: 'never'
             }
         ],
-
+        'vue/html-closing-bracket-newline': [
+            'error',
+            {
+                singleline: 'never',
+                multiline: 'always'
+            }
+        ],
         /**
          * template 模版中使用 4 个空格缩进
          * @category Improving Readability
