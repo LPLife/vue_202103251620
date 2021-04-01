@@ -1,19 +1,13 @@
 <template>
-    <div class="hello">
-        子应用2
-    </div>
+    <div class="hello">子应用2</div>
 </template>
 
 <script>
 export default {
-    name: 'HelloWorld',
-    props: {
-        msg: String
-    },
+    name: "HelloWorld",
+    props: {},
     data() {
-        return {
-            name: 'dd'
-        };
+        return {};
     }
 };
 </script>
